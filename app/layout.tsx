@@ -15,6 +15,10 @@ const cormorant = Cormorant({
 export const metadata: Metadata = {
   title: "Naturopathy Wellness",
   description: "Experience Complete Healing Through The Seven Chakras",
+  icons: {
+    icon: "/image/logo.jpeg",
+    apple: "/image/logo.jpeg",
+  },
 };
 
 export default function RootLayout({
