@@ -33,7 +33,7 @@ const features = [
         <path d="M14 8a8 8 0 0112 0" stroke="currentColor" strokeWidth="1" fill="none" opacity="0.5" />
       </svg>
     ),
-    title: 'Authentic Ayurveda',
+    title: 'Homeopathy Ayurveda',
     desc: 'Experience genuine Homeopathy treatments rooted in centuries of tradition',
   },
   {
