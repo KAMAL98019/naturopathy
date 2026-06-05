@@ -6,7 +6,7 @@ export const chakras = [
     petals: 4, element: 'Earth', mantra: 'LAM', freq: 396,
     solfeggio: 'UT — 396 Hz',
     focus: ['Bone Health', 'Muscle Recovery', 'Immunity', 'Grounding & Stability'],
-    departments: ['Mud Therapy Center', 'Hydrotherapy Unit', 'Natural Pain Management', 'Barefoot Walking Trails'],
+    departments: ['Mud Therapy Center', 'Hydrotherapy Unit', 'Homeopathy Pain Management', 'Barefoot Walking Trails'],
     therapies: ['Mud Packs', 'Barefoot Walking', 'Grounding Exercises', 'Nutritional Counseling'],
     guide: 'The Root Chakra focuses on physical strength, immunity, and foundational wellbeing — the very earth beneath your healing journey.',
     soundDesc: 'UT — 396 Hz liberates guilt and fear, grounding your energy into the earth.',

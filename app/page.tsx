@@ -2,6 +2,7 @@ import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import ChakraSection from "./components/ChakraSection";
 import WellnessSection from "./components/WellnessSection";
+import FacilitiesSection from "./components/FacilitiesSection";
 import SoundTherapySection from "./components/SoundTherapySection";
 import ThankYouSection from "./components/ThankYouSection";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutSection />
       <ChakraSection />
       <WellnessSection />
+      <FacilitiesSection />
       <SoundTherapySection />
       <ThankYouSection />
     </main>

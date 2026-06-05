@@ -204,8 +204,8 @@ export default function ChakraSection() {
           </div>
           
           {/* Right Column: Image */}
-          <div className="hidden md:flex w-[300px] lg:w-[360px] flex-shrink-0 flex-col items-center justify-center gap-4">
-            <div className="relative w-full rounded-2xl overflow-hidden" style={{ aspectRatio: '1/1' }}>
+          <div className="flex w-full md:w-[300px] lg:w-[360px] flex-shrink-0 flex-col items-center justify-center gap-4 order-first md:order-last">
+            <div className="relative w-full rounded-2xl overflow-hidden aspect-video md:aspect-square">
               <Image
                 src={`/image/hut/${activeIdx + 1}.jpeg`}
                 alt={`Hut - ${c.english}`}

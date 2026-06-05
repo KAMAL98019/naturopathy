@@ -29,7 +29,7 @@ export default function AboutSection() {
               At Sapta Chakra Integrative Naturopathy & Wellness Hospital, we believe true healing extends beyond treating symptoms. Our unique wellness philosophy combines naturopathy, yoga, homeopathy, and chakra-based healing to restore balance across the body, mind, emotions, and spirit.
             </p>
             <p>
-              Designed around the wisdom of the Seven Chakras, our healing spaces and therapies guide every individual toward complete wellbeing through natural, preventive, and restorative healthcare.
+              Designed around the wisdom of the Seven Chakras, our healing spaces and therapies guide every individual toward complete wellbeing through homeopathy, preventive, and restorative healthcare.
             </p>
           </div>
 
@@ -56,7 +56,7 @@ export default function AboutSection() {
                 </svg>
               </div>
               <div>
-                <h3 className="font-cinzel text-xl mb-2 text-[#C9A84C]">Integrative Natural Healthcare</h3>
+                <h3 className="font-cinzel text-xl mb-2 text-[#C9A84C]">Integrative Homeopathy Healthcare</h3>
                 <p className="font-cormorant text-[#F5EDD6]/60 leading-relaxed">
                   Our multidisciplinary wellness programs combine naturopathy, yoga therapy, homeopathy, meditation, therapeutic nutrition, and hydrotherapy to support long-term health transformation.
                 </p>

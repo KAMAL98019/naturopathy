@@ -44,8 +44,8 @@ const features = [
         <circle cx="20" cy="24" r="2" fill="currentColor" opacity="0.4" />
       </svg>
     ),
-    title: 'Natural Healing Methods',
-    desc: 'We use only natural, herbal remedies and traditional Homeopathy techniques',
+    title: 'Homeopathy Healing Methods',
+    desc: 'We use only Homeopathy, herbal remedies and traditional Homeopathy techniques',
   },
   {
     icon: (
@@ -57,8 +57,8 @@ const features = [
         <line x1="20" y1="17" x2="26" y2="24" stroke="currentColor" strokeWidth="1" />
       </svg>
     ),
-    title: 'Expert Practitioners',
-    desc: 'Our services blend therapeutic treatments with lifestyle guidance',
+    title: 'Certified Wellness Experts',
+    desc: 'Our seasoned doctors integrate holistic therapies with personalized lifestyle coaching',
   },
   {
     icon: (
@@ -69,8 +69,8 @@ const features = [
         <circle cx="20" cy="22" r="1" fill="currentColor" opacity="0.4" />
       </svg>
     ),
-    title: 'Natural Ingredients',
-    desc: 'We use only natural, herbal remedies and techniques, promoting safe healing',
+    title: 'Homeopathy Ingredients',
+    desc: 'We use only Homeopathy, herbal remedies and techniques, promoting safe healing',
   },
   {
     icon: (
@@ -102,7 +102,7 @@ const revenueStreams = [
   },
   {
     title: 'Outpatient Consultations',
-    desc: 'Expert guidance and natural remedies tailored to your daily life, focusing on sustainable wellness goals.',
+    desc: 'Expert guidance and Homeopathy remedies tailored to your daily life, focusing on sustainable wellness goals.',
   },
   {
     title: 'Wellness Retreats',
@@ -114,7 +114,7 @@ const revenueStreams = [
   },
   {
     title: 'Organic Food Products',
-    desc: 'Pure, ethically sourced nutritional products and supplements to support your natural healing journey.',
+    desc: 'Pure, ethically sourced nutritional products and supplements to support your Homeopathy healing journey.',
   },
   {
     title: 'Medical Juice Therapy Programs',
