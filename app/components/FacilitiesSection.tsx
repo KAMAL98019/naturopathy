@@ -11,6 +11,11 @@ const facilities = [
     desc: 'A spacious, elegantly designed hall for wellness seminars, corporate health programs, and community healing workshops.',
     image: '/image/conferencehall.avif',
   },
+  {
+    title: 'Barefoot Walking Trails',
+    desc: 'Experience natural reflexology and grounding on our specialized walking trails, designed to connect you directly with the earth.',
+    image: '/image/walk.jpeg',
+  },
 ];
 
 export default function FacilitiesSection() {
@@ -32,7 +37,7 @@ export default function FacilitiesSection() {
         </div>
 
         {/* Facilities Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {facilities.map((facility, i) => (
             <div
               key={i}
