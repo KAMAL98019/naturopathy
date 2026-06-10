@@ -32,7 +32,7 @@ export const chakras = [
     petals: 10, element: 'Fire', mantra: 'RAM', freq: 528,
     solfeggio: 'MI — 528 Hz',
     focus: ['Digestive Health', 'Diabetes Management', 'Weight Management', 'Metabolic Wellness'],
-    departments: ['Therapeutic Kitchen', 'Fasting Therapy Center', 'Juice Therapy Unit', 'homeopathy'],
+    departments: ['Therapeutic Kitchen', 'Detox', 'Yoga', 'homeopathy'],
     therapies: ['Fasting Therapy', 'Juice Therapy', 'Therapeutic Diets', 'Detox Programs'],
     guide: 'The Solar Plexus Chakra empowers your confidence, energy, metabolism, and the transformative fire of digestive health.',
     soundDesc: 'MI — 528 Hz is the miracle tone for DNA repair, transformation and miracles.',

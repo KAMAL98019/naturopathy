@@ -20,14 +20,21 @@ export default function AboutSection() {
             <span className="font-cinzel text-sm tracking-widest text-[#C9A84C]">ABOUT US</span>
           </div>
 
-          <h2 className="font-cinzel text-4xl md:text-5xl lg:text-6xl leading-tight mb-8">
-            Our Mission and Vision
+          <h2 className="font-cinzel text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">
+            Our Mission
           </h2>
 
-          <div className="font-cormorant text-lg text-[#F5EDD6]/70 space-y-6 mb-10">
+          <div className="font-cormorant text-lg text-[#F5EDD6]/70 mb-8">
             <p>
               At Sapta Chakra Integrative Naturopathy & Wellness Hospital, we believe true healing extends beyond treating symptoms. Our unique wellness philosophy combines naturopathy, yoga, homeopathy, and chakra-based healing to restore balance across the body, mind, emotions, and spirit.
             </p>
+          </div>
+
+          <h2 className="font-cinzel text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">
+            Our Vision
+          </h2>
+
+          <div className="font-cormorant text-lg text-[#F5EDD6]/70 mb-10">
             <p>
               Designed around the wisdom of the Seven Chakras, our healing spaces and therapies guide every individual toward complete wellbeing through homeopathy, preventive, and restorative healthcare.
             </p>

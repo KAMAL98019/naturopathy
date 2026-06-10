@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import TherapiesParallax from './TherapiesParallax';
 
 const steps = [
   {
@@ -23,73 +24,34 @@ const steps = [
   },
 ];
 
+const iconStyle: React.CSSProperties = {
+  filter: 'invert(72%) sepia(50%) saturate(500%) hue-rotate(5deg) brightness(90%) contrast(90%)',
+  mixBlendMode: 'screen',
+};
+
 const features = [
   {
-    icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="14" r="6" stroke="currentColor" strokeWidth="1.5" fill="none" />
-        <path d="M20 22c-7 0-12 4-12 8v2h24v-2c0-4-5-8-12-8z" stroke="currentColor" strokeWidth="1.5" fill="none" />
-        <circle cx="20" cy="14" r="2" fill="currentColor" opacity="0.4" />
-        <path d="M14 8a8 8 0 0112 0" stroke="currentColor" strokeWidth="1" fill="none" opacity="0.5" />
-      </svg>
-    ),
-    title: 'Homeopathy Ayurveda',
-    desc: 'Experience genuine Homeopathy treatments rooted in centuries of tradition',
+    iconSrc: '/image/icons/wellness/homeopathyhealing.png',
+    title: 'Classical Homeopathy Healing',
+    desc: 'Experience genuine Homeopathy treatments rooted in centuries of tradition, using herbal remedies and traditional techniques',
   },
   {
-    icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 6c-4 4-12 10-12 18a12 12 0 0024 0c0-8-8-14-12-18z" stroke="currentColor" strokeWidth="1.5" fill="none" />
-        <path d="M20 14c-2 2-6 5-6 10a6 6 0 0012 0c0-5-4-8-6-10z" stroke="currentColor" strokeWidth="1" fill="none" opacity="0.5" />
-        <circle cx="20" cy="24" r="2" fill="currentColor" opacity="0.4" />
-      </svg>
-    ),
-    title: 'Homeopathy Healing Methods',
-    desc: 'We use only Homeopathy, herbal remedies and traditional Homeopathy techniques',
-  },
-  {
-    icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="12" r="5" stroke="currentColor" strokeWidth="1.5" fill="none" />
-        <circle cx="12" cy="28" r="4" stroke="currentColor" strokeWidth="1.5" fill="none" />
-        <circle cx="28" cy="28" r="4" stroke="currentColor" strokeWidth="1.5" fill="none" />
-        <line x1="20" y1="17" x2="14" y2="24" stroke="currentColor" strokeWidth="1" />
-        <line x1="20" y1="17" x2="26" y2="24" stroke="currentColor" strokeWidth="1" />
-      </svg>
-    ),
+    iconSrc: '/image/icons/wellness/wellnessexpert.png',
     title: 'Certified Wellness Experts',
     desc: 'Our seasoned doctors integrate holistic therapies with personalized lifestyle coaching',
   },
   {
-    icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M10 28c0-8 4-16 10-20c6 4 10 12 10 20" stroke="currentColor" strokeWidth="1.5" fill="none" />
-        <path d="M14 28c0-5 2.5-10 6-14c3.5 4 6 9 6 14" stroke="currentColor" strokeWidth="1" fill="none" opacity="0.5" />
-        <circle cx="20" cy="22" r="3" stroke="currentColor" strokeWidth="1" fill="none" />
-        <circle cx="20" cy="22" r="1" fill="currentColor" opacity="0.4" />
-      </svg>
-    ),
+    iconSrc: '/image/icons/wellness/homeopathyingredients.png',
     title: 'Homeopathy Ingredients',
     desc: 'We use only Homeopathy, herbal remedies and techniques, promoting safe healing',
   },
   {
-    icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="12" stroke="currentColor" strokeWidth="1.5" fill="none" />
-        <path d="M20 8c0 6-6 12-12 12c6 0 12 6 12 12c0-6 6-12 12-12c-6 0-12-6-12-12z" stroke="currentColor" strokeWidth="1" fill="none" opacity="0.5" />
-        <circle cx="20" cy="20" r="3" fill="currentColor" opacity="0.3" />
-      </svg>
-    ),
+    iconSrc: '/image/icons/wellness/sereneenvironment.png',
     title: 'Serene Environment',
     desc: 'Our therapy will be done in chakara hut with pleasant environment',
   },
   {
-    icon: (
-      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 6l4 8 8 2-6 6 2 8-8-4-8 4 2-8-6-6 8-2z" stroke="currentColor" strokeWidth="1.5" fill="none" />
-        <circle cx="20" cy="20" r="4" stroke="currentColor" strokeWidth="1" fill="none" opacity="0.5" />
-      </svg>
-    ),
+    iconSrc: '/image/icons/wellness/wellnessexpert.png',
     title: 'Proven Results',
     desc: 'With a 99% customer satisfaction rate, our clients consistently leave feeling revitalized',
   },
@@ -201,30 +163,70 @@ export default function WellnessSection() {
             </h2>
           </div>
 
-          {/* Features grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px bg-[#C9A84C]/10 rounded-xl overflow-hidden">
-            {features.map((feat, i) => (
-              <div
-                key={i}
-                className="bg-[#010103]/70 backdrop-blur-md p-8 md:p-10 text-center flex flex-col items-center gap-4 transition-all duration-500 hover:bg-[#010103]/50"
-              >
-                {/* Icon */}
-                <div className="text-[#C9A84C] mb-1">
-                  {feat.icon}
-                </div>
-                {/* Title */}
-                <h3 className="font-cinzel text-lg text-[#F5EDD6]">
-                  {feat.title}
-                </h3>
-                {/* Description */}
-                <p className="font-cormorant text-[#F5EDD6]/65 text-base leading-relaxed max-w-[280px]">
-                  {feat.desc}
-                </p>
+          {/* Featured layout: hero card + grid */}
+          <div className="flex flex-col lg:flex-row gap-6">
+
+            {/* Left: Featured hero card */}
+            <div className="lg:w-[40%] group relative rounded-2xl overflow-hidden p-10 md:p-12 flex flex-col justify-between min-h-[400px]"
+              style={{
+                background: 'linear-gradient(160deg, rgba(201,168,76,0.08) 0%, #010103 50%, rgba(201,168,76,0.04) 100%)',
+                backdropFilter: 'blur(20px)',
+                border: '1px solid rgba(201,168,76,0.2)',
+              }}
+            >
+              <div>
+                <span className="font-cinzel text-6xl md:text-7xl font-bold text-[#C9A84C]/15 block mb-4">01</span>
+                <div className="mb-6"><Image src={features[0].iconSrc} alt={features[0].title} width={160} height={160} style={iconStyle} /></div>
+                <h3 className="font-cinzel text-2xl md:text-3xl text-[#F5EDD6] mb-4 leading-tight">{features[0].title}</h3>
+                <p className="font-cormorant text-lg text-[#F5EDD6]/70 leading-relaxed">{features[0].desc}</p>
               </div>
-            ))}
+              <div className="mt-8 h-[1px] w-full" style={{ background: 'linear-gradient(90deg, rgba(201,168,76,0.4), transparent)' }} />
+              {/* Corner accent */}
+              <div className="absolute top-0 right-0 w-24 h-24 pointer-events-none opacity-40 group-hover:opacity-70 transition-opacity duration-700"
+                style={{ background: 'radial-gradient(circle at 100% 0%, rgba(201,168,76,0.2), transparent 70%)' }}
+              />
+            </div>
+
+            {/* Right: 2x2 grid */}
+            <div className="lg:w-[60%] grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {features.slice(1).map((feat, i) => (
+                <div
+                  key={i}
+                  className="group relative rounded-2xl p-7 md:p-8 transition-all duration-500 hover:-translate-y-1"
+                  style={{
+                    background: '#010103',
+                    backdropFilter: 'blur(12px)',
+                    border: '1px solid rgba(201,168,76,0.12)',
+                    boxShadow: '0 4px 24px rgba(0,0,0,0.3)',
+                  }}
+                >
+                  {/* Number + Icon row */}
+                  <div className="flex items-center justify-between mb-5">
+                    <span className="font-cinzel text-3xl font-bold text-[#C9A84C]/20 group-hover:text-[#C9A84C]/40 transition-colors duration-500">
+                      0{i + 2}
+                    </span>
+                    <div className="opacity-60 group-hover:opacity-100 transition-opacity duration-500">
+                      <Image src={feat.iconSrc} alt={feat.title} width={80} height={80} style={iconStyle} />
+                    </div>
+                  </div>
+                  {/* Title */}
+                  <h3 className="font-cinzel text-lg md:text-xl text-[#F5EDD6] mb-3">{feat.title}</h3>
+                  {/* Description */}
+                  <p className="font-cormorant text-[#F5EDD6]/60 text-base leading-relaxed">{feat.desc}</p>
+                  {/* Bottom glow */}
+                  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-2/3 h-[1px] opacity-0 group-hover:opacity-100 transition-opacity duration-700"
+                    style={{ background: 'linear-gradient(90deg, transparent, rgba(201,168,76,0.4), transparent)' }}
+                  />
+                </div>
+              ))}
+            </div>
+
           </div>
         </div>
       </div>
+
+      {/* ── PART 2.5: Therapies Parallax ── */}
+      <TherapiesParallax />
 
       {/* ── PART 3: Revenue Streams ── */}
       <div className="max-w-7xl mx-auto px-5 md:px-10 lg:px-16 py-20 md:py-28">
